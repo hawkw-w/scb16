@@ -68,8 +68,6 @@ def write_result(filename,sheetname,row,column,result):
     sheet1.cell(row,column).value = result
     wk.save(filename)
 
-
-
 def exec_case(filename,sheetname):
     # 获取excel所有用例的数据
     cases = ReadDate(filename,sheetname)
