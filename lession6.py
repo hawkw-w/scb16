@@ -81,7 +81,6 @@ def exec_case(filename,sheetname):
 
         # 发送请求获取响应的数据
         response = api_request(url,data)
-        print(response)
         # 获取期望结果
         excepted_msg = eval(case["excepted"])["msg"]
         print(f"预期结果为：{excepted_msg}")
